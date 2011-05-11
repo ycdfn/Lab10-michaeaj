@@ -8,6 +8,15 @@ class Fortune < Sinatra::Base
 		@fortune = $fortunes[rand($fortunes.size)]
 		haml :fortune
 	end
+	
+	get '/fortune/get/:fid' do
+		@fortune = $fortunes[params[:fid].to_i]
+		haml :fortune
+	end
+	
+	get '/' do
+		"Hello World"
+	end
 
 end
 

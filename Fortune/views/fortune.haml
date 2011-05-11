@@ -7,3 +7,7 @@
 		- if(@fortune)
 			.fortune
 				= @fortune
+		%form{:action => "", :method => "get"}
+			%input{:type => "submit", :id => "random_fortune", :value => "New Fortune"}
+		%form{:action => "", :method => "get"}
+			%input{:type => "submit", :id => "specific_fortune", :value => "Specific Fortune"}
