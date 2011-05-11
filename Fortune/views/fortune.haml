@@ -8,6 +8,7 @@
 			.fortune
 				= @fortune
 		%form{:action => "", :method => "get"}
-			%input{:type => "submit", :id => "random_fortune", :value => "New Fortune"}
+			%input{:type => "submit", :id => "random_fortune", :value => "Random Fortune"}
 		%form{:action => "", :method => "get"}
+			%input{:type => "text", :id => "fortune_number"}
 			%input{:type => "submit", :id => "specific_fortune", :value => "Specific Fortune"}
